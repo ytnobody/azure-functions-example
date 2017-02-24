@@ -1,0 +1,21 @@
+{
+    "bindings": [
+        {
+            "type": "eventHubTrigger",
+            "name": "inputEvent",
+            "direction": "in",
+            "path": "push",
+            "connection": "EVENTHUB_CONNECTION"
+        },
+        {
+            "name": "notification",
+            "type": "notificationHub",
+            "tagExpression": "",
+            "hubName": "my-notification-hub",
+            "connection": "NOTIFICATION_HUBS_CONNECTION",
+            "platform": "apns",
+            "direction": "out"
+        }
+    ],
+    "disabled": false
+}

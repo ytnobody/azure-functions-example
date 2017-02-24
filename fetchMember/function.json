@@ -1,0 +1,25 @@
+{
+    "bindings": [
+        {
+            "authLevel": "function",
+            "type": "httpTrigger",
+            "direction": "in",
+            "name": "req"
+        },
+        {
+            "type": "http",
+            "direction": "out",
+            "name": "res"
+        },
+        {
+            "type": "documentDB",
+            "name": "inputDocument",
+            "databaseName": "myservice",
+            "collectionName": "member",
+            "id": "{memberid}",
+            "connection": "MyDocumentDB",
+            "direction": "in"
+        }
+    ],
+    "disabled": false
+}
